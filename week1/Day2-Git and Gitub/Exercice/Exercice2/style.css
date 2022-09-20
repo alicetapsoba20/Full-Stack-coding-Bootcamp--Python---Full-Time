@@ -1,54 +1,133 @@
+@import url('https://fonts.googleapis.com/css2? family= Dangrek & display=swap');
+
 body{
-    background: #f6f5f7;
-    position: absolute;
-    height:100vh ;
-    width: 100% ;
-    margin: -20px 0 50px;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
+       
+    }
+.blog{
+border: 5px solid #ccc;
+display: flex;
+flex-direction: row;
+width: 60%;
+height: 70vh;
+margin-left: 25%;
+margin-right: 25%;
+margin-top: 25%;
+margin-bottom: 25%;
 }
-.contenu{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
-    background:#fff;
-    box-shadow: 7px 4px 19px -2px black;
-}
-/*.forme{
-position: absolute;
-z-index: 2;
-top:50%;
-left: 50%;
-transform: translate(-50%, -50%);
 
-width:930px;
-height: 60%;
-min-height: 510px;
-background-color: aqua;
-/*box-shadow: 7px 4px 19px -2px black;*/
+.page1{
 
-.section1{
-    background-color: rgb(255, 255, 255);
-    padding: 0 50px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    padding: 15px;
     text-align: center;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
 }
-/*.section2{
-    float:right;
-    background-color: blue;
-}*/
-.input{
-    background: rgb(216, 214, 214);
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0px;
-    width: 100%;
-}
-button{
 
+.page2{
+
+    background: linear-gradient( blue,pink);
+    padding: 15px;
+    text-align: center;
+    width: 60%;
+}
+#color{
+    width: 60%;
+    padding: auto;
+}
+
+label{
+    padding: 5px;
+    
+}
+
+a {
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    margin-left:45px ;
+}
+
+.forgot{
+    padding: 5px;
+}
+
+h1{
+    font-size: 50px;
+    font-family:Dangrek-Regular;
+    font-weight: bold;
+}
+.ligne {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+   
+}
+.ligne:before,.ligne:after{
+    content: "  ";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: 10px;
+
+}
+h2{
+    font-size: 40px;
+    color: white;
+}
+#forme3{
+
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+    margin-top: 20px;
+}
+
+#forme2{
+    
+    width: 300px;
+    height: 25px;
+    background-color:#ccc;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+
+}
+#forme1{
+    width: 300px;
+    height: 25px;
+    background-color:#ccc;
+}
+#forme4{
+    width: 120px;
+    height: 50px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+.social{
+text-align: center;
+font-size: 20px;
+color: rgba(124, 121, 121, 0.912);
+}
+
+.date{
+    margin-top: 10%;
+
+}
+
+#icone{
+    margin-top: 20px;
+    margin-bottom: 45%;
+    font-size: 10px;
+    
+}
+
+#icon{
+    font-size:90px;
+    color: white;
 }
