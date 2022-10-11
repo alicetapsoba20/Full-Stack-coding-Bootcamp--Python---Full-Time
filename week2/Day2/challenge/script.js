@@ -1,57 +1,29 @@
-/*let sentence = prompt("entrer une phrase contenant le mot'not' et 'bad'");
-/*console.log(sentence);
-let wordNot = sentence.indexOf("not");
-let wordBad = sentence.charAt('bad');
-console.log(wordBad)*/
+// Créez une variable appelée sentence. La valeur de la variable doit être une chaîne contenant les mots « not » et « bad ».
+// Par exemple, "Le film n'est pas si mal, j'aime bien" .
 
-for(let i=0;i<=15;i++){
-    if (i % 2==0 ){
-    console.log(i+" est paire");}
-    else{
-    console.log(i+" est impaire");}
-}
-function setTime(){
-    setTimeout(function(){
-        alert('hello');
-    },3000)
-    }
+// Créez une variable appelée wordNotoù sa valeur est la première apparition (c'est-à-dire la position) de la sous-chaîne "not" (de la sentencevariable).
 
-    let id;
-    function setInter(){
-    let num = 0
-    id = setInterval(function(){
-        console.log(num);
-        num ++
-    },1000);
-    }
+// Créez une variable appelée wordBadoù sa valeur est la première apparition (c'est-à-dire la position) de la sous-chaîne "bad" (de la sentencevariable).
 
-    function clearInter(){
-    clearInterval(id);
-    }
+// Si le mot "bad" vient après le mot "not", vous devez remplacer toute la sous-chaîne "not…bad" par "good", puis console.log le résultat.
+// Par exemple, le résultat ici devrait être : "Le film est bon, je l'aime"
+// Si le mot "bad" ne vient pas après "not" ou si les mots ne sont pas dans la phrase, console.log la phrase originale.
+ 
+ let sentence = prompt("entrer une phrase contenant le mot'not' et 'bad'");
+ sentence = sentence.split(" ")
+ let wordNot = sentence.indexOf("not");
+let wordBad = sentence.indexOf("bad");
 
-    let root = document.getElementById('root');
-
-    let outer = document.createElement('div');
-    let inner = document.createElement('div');
-    outer.classList.add('outer');
-    inner.classList.add('inner');
-    inner.setAttribute('id','main');
-    outer.appendChild(inner);
-    root.appendChild(outer);
-
-    function myMove() {
-    var elem = document.getElementById("main");
-    var pos =0;
-    elem.style.top = 150 + "px";
-    elem.style.left = 0 + "px";
-    let id = setInterval(function() {
-        if (pos ==350) {
-        clearInterval(id);
-        }
-        else {
-            pos++;
-            elem.style.top =150 + 150*Math.sin(pos*Math.PI/180) + "px";
-            elem.style.left = pos + "px";
-            }
-    }, 5);
-    }
+ if (wordBad > wordNot){
+     sentence.splice (wordNot,wordBad-wordNot+1,"good");
+     sentence = sentence.join(" ");
+     }
+  else if (wordBad) 
+     {
+     	wordBad = sentence.indexOf("bad,");
+     	sentence.splice (wordNot,wordBad-wordNot+1,"good,");
+    		sentence = sentence.join(" ");	
+     }
+  else {
+ 	sentence = sentence.join(" ");}
+     console.log(sentence);
